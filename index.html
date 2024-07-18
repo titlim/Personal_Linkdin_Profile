@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="linkedin-webpage-img/images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="linkedin-webpage-img/images/search.png" >
+                <input type="text" placeholder="Search">
+
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="linkedin-webpage-img/images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="linkedin-webpage-img/images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="linkedin-webpage-img/images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="linkedin-webpage-img/images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="linkedin-webpage-img/images/notification.png"><span>Notifications</span></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="linkedin-webpage-img/images/user.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </div>
+<!-- ---------------profile-drop-down-menu-------------------- -->
+ <div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="linkedin-webpage-img/images/user.png">
+            <div>
+                <h3>Usha Mondal</h3>
+                <a href="index - Copy.html">My Profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="linkedin-webpage-img/images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="linkedin-webpage-img/images/setting.png">
+            <p>Settings and Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="linkedin-webpage-img/images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="linkedin-webpage-img/images/display.png">
+            <p>isplay & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="linkedin-webpage-img/images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+ </div>
+
+    </nav>
+
+<!--------------- --------navbar close-------- ---------------- -->
+<div class="container">   
+    
+    <!-- ----left-sidebar------ -->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="linkedin-webpage-img/images/file (5).png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="linkedin-webpage-img/images/user.png">
+                <h1>Usha Mondal</h1>
+                <h2>Software Developer Enthusiast | Tech Enthusiast | Web Development</h2>
+                <h3>Kolkata, West Bengal</h3>
+                <ul>
+                    <li>Profile vierws <span>332</span></li>
+                    <li>Post Impressions<span>403</span></li>
+                    <li>Connections<span>658</span></li>
+                    
+                </ul>
+            </div>
+
+
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="linkedin-webpage-img/images/items.png">Itmes</a>
+                <a href="#"><img src="linkedin-webpage-img/images/premium.png">Try premium</a>
+            </div>
+        </div>
+
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>Recent</h3>
+            <a href="#"><img src="linkedin-webpage-img/images/recent.png" >Web Development</a>
+            <a href="#"><img src="linkedin-webpage-img/images/recent.png" >User Interface</a>
+            <a href="#"><img src="linkedin-webpage-img/images/recent.png" >Online Learning</a>
+            <a href="#"><img src="linkedin-webpage-img/images/recent.png" >Code Better</a>
+            <a href="#"><img src="linkedin-webpage-img/images/recent.png" >Group Learning</a>
+            <h3>Groups</h3>
+            <a href="#"><img src="linkedin-webpage-img/images/group.png" >Web Design Group</a>
+            <a href="#"><img src="linkedin-webpage-img/images/group.png" >HTML & CSS Group</a>
+            <a href="#"><img src="linkedin-webpage-img/images/group.png" >Javascript Group</a>
+            <a href="#"><img src="linkedin-webpage-img/images/group.png" >Learn Coding Online</a>
+            <h3>Hashtags</h3>
+            <a href="#"><img src="linkedin-webpage-img/images/hashtag.png" >Webdevelopment</a>
+            <a href="#"><img src="linkedin-webpage-img/images/hashtag.png" >userinterface</a>
+            <a href="#"><img src="linkedin-webpage-img/images/hashtag.png" >onlinelearning</a>
+            <div class="discover-more-link">
+                <a href="#">Discover more</a>
+            </div>
+        </div>
+        <p id="show-more-link" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+    <!-- -------main-sidebar------ -->
+    <div class="main-sidebar">
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="linkedin-webpage-img/images/user.png">
+                <textarea rows="2" placeholder="write a post"></textarea>
+            </div>
+
+            <div class="create-post-links">
+                <li><img src="linkedin-webpage-img/images/photo.png">Photo</li>
+                <li><img src="linkedin-webpage-img/images/video.png">Video</li>
+                <li><img src="linkedin-webpage-img/images/event.png">Event</li>
+                <li>Post</li>
+                
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="linkedin-webpage-img/images/down-arrow.png" ></span></p>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="linkedin-webpage-img/images/user-3.png" >
+                <div>
+                    <h1>Angela De Souza</h1>
+                    <small>
+                        Founder & CEO at Women's Business Club | Angel Investor</small>
+                    <small>2h ago</small>
+                </div>
+            </div>
+            <p>The success of every website hinges on its ability to provide value to its users through high-quality content, intuitive design, and reliable service. By focusing on user experience, regularly updating information, and engaging with the community,Website can build a loyal following and establish itself as a trusted resource.</p>
+            <img src="linkedin-webpage-img/images/post-image-1.png" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="linkedin-webpage-img/images/thumbsup.png">
+                    <img src="linkedin-webpage-img/images/love.png">
+                    <img src="linkedin-webpage-img/images/clap.png">
+                    <span class="liked-user">Shrutakeerti Roy and 78 others</span>
+                </div>
+                <div>
+                    <span> 23 comments &middot; 30 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="linkedin-webpage-img/images/user.png" class="post-activity-user-icon">
+                    <img src="linkedin-webpage-img/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/like.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/comment.png" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/share.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/send.png" >
+                    <span>Send</span>
+                </div>
+                
+            </div>
+        </div> 
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="linkedin-webpage-img/images/user-2.png" >
+                <div>
+                    <h1>Harry Hugo </h1>
+                    <small>
+                        Co-Founder and Chief Campaign Officer</small>
+                    <small>5h ago</small>
+                </div>
+            </div>
+            <p>This year alone The Goat Agency has worked with Amazon, FIFA, New Look, Malibu, UEFA, Fenty Beauty, TikTok and Kellogg’s. Earlier in the year they opened their third international office in Singapore, and are continuing to grow their 120 head count every week in order to meet the demand of new clients.</p>
+            <img src="linkedin-webpage-img/images/post-image-2.png" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="linkedin-webpage-img/images/thumbsup.png">
+                    <img src="linkedin-webpage-img/images/love.png">
+                    <img src="linkedin-webpage-img/images/clap.png">
+                    <span class="liked-user">Ben Jeffries  and 59 others</span>
+                </div>
+                <div>
+                    <span> 20 comments &middot; 19 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="linkedin-webpage-img/images/user.png" class="post-activity-user-icon">
+                    <img src="linkedin-webpage-img/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/like.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/comment.png" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/share.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/send.png" >
+                    <span>Send</span>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="linkedin-webpage-img/images/user-4.png" >
+                <div>
+                    <h1>Maya Pindeus</h1>
+                    <small>
+                        Co-Founder and CEO of Humanising Autonomy</small>
+                    <small>2h ago</small>
+                </div>
+            </div>
+            <p>The company is already operating on a global level and using a variety of data sources to inform its machine learning system, allowing the technology to work effectively in different environments and countries where pedestrians may behave differently.</p>
+            <img src="linkedin-webpage-img/images/post-image-3.png" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="linkedin-webpage-img/images/thumbsup.png">
+                    <img src="linkedin-webpage-img/images/love.png">
+                    <img src="linkedin-webpage-img/images/clap.png">
+                    <span class="liked-user">Mariya Grinina  and 67 others</span>
+                </div>
+                <div>
+                    <span> 23 comments &middot; 30 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="linkedin-webpage-img/images/user.png" class="post-activity-user-icon">
+                    <img src="linkedin-webpage-img/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/like.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/comment.png" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/share.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/send.png" >
+                    <span>Send</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="linkedin-webpage-img/images/user-5.png" >
+                <div>
+                    <h1>Dan Swygart </h1>
+                    <small>
+                        Co-Founder and Chief Commercial Officer</small>
+                    <small>25min ago</small>
+                </div>
+            </div>
+            <p> The idea for the company was born from the flurry of requests for friends to store luggage at Anthony’s Euston home. After setting up a website to gauge the level of interest and making connections with local businesses that could also offer short term storage, Stasher was born. Anthony’s experience at Brainlabs proved invaluable in helping the company expand in its early stages.</p>
+            <img src="linkedin-webpage-img/images/post-image-4.png" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="linkedin-webpage-img/images/thumbsup.png">
+                    <img src="linkedin-webpage-img/images/love.png">
+                    <img src="linkedin-webpage-img/images/clap.png">
+                    <span class="liked-user">Anthony Collias  and 98 others</span>
+                </div>
+                <div>
+                    <span> 43 comments &middot; 50 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="linkedin-webpage-img/images/user.png" class="post-activity-user-icon">
+                    <img src="linkedin-webpage-img/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/like.png" >
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/comment.png" >
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/share.png" >
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="linkedin-webpage-img/images/send.png" >
+                    <span>Send</span>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <!-- ---------right-sidebar--------- -->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="linkedin-webpage-img/images/more.png" class="info-icon">
+            <h3>LinkedIn News</h3>
+            <a href="#">High demand for skilled power</a>
+            <span>1d ago &middot; 14,910 readers</span>
+
+            <a href="#">Careers growing horizontally too</a>
+            <span>10h ago &middot; 1,552 readers</span>
+
+            <a href="#">Students rethink study abroad options</a>
+            <span>14 ago &middot; 27,290 readers</span>
+
+            <a href="#">Tech hiring picks up pace</a>
+            <span>9h ago &middot; 8,208 readers</span>
+
+            <a href="#">Less work visa for US, more for UK</a>
+            <span>1h ago &middot; 4,205 readers</span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>The 5 principles of web design</p>
+            <div>
+                <img src="linkedin-webpage-img/images/user.png">
+                <img src="linkedin-webpage-img/images/mi-logo.png">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <!-- <p> Linkedup Corporation &#169; 2024</p> -->
+                <img src="linkedin-webpage-img/images/logo.png" >
+                <p> Linkedup Corporation &#169; 2024</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="linkdine.js"></script>
+<script>
+    let sidebarActivity=document.getElementById("sidebarActivity");
+    let moreLink=document.getElementById("showMoreLink");
+    function toggleActivity(){
+        sidebarActivity.classList.toggle("open-activity");
+
+    }
+
+</script>
+
+</body>
+</html>
